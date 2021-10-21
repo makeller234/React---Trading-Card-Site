@@ -16,6 +16,11 @@ def show_cards():
 
     return render_template('cards.html')
 
+@app.route('/about')
+def about_page():
+
+    return render_template('about.html')
+
 
 if __name__ == '__main__':
     app.run(debug=True, host='0.0.0.0')
